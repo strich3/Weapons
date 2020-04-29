@@ -17,7 +17,7 @@ class WeaponCommand extends Command implements PluginIdentifiableCommand{
                 $this->core = $c;
 
                 $this->setPermission("command.weapon");
-                parent::__construct("weapon", "weapons command", "§eUsage: /weapon", []);
+                parent::__construct("weapon", "weapons comman", "§eUsage: /weapon", []);
         }
 
         /**
