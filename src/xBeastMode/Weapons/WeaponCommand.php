@@ -30,7 +30,7 @@ class WeaponCommand extends Command implements PluginIdentifiableCommand{
         public function execute(CommandSender $sender, string $commandLabel, array $args){
                 if(!$this->testPermission($sender)){
                         return false;
-                }
+                /**}
 
                 if(!$sender instanceof Player){
                         $sender->sendMessage("Please run this command in-game.");
@@ -71,7 +71,7 @@ class WeaponCommand extends Command implements PluginIdentifiableCommand{
                         }
 
                         $item = GunData::getGunItem($gun);
-                        $item->setCustomName(RandomUtils::colorMessage("&l&4{$gun} &7[Right Click]"));
+                        $item->setCustomName(RandomUtils::colorMessage("&l&4{$gun} &7[Rechtsklick]"));
                         $item->setCustomBlockData(new CompoundTag("", [new StringTag(GunData::GUN_TAG, $gun)]));
 
                         $player->getInventory()->addItem($item);
