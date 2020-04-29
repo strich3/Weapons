@@ -30,12 +30,6 @@ class WeaponCommand extends Command implements PluginIdentifiableCommand{
         public function execute(CommandSender $sender, string $commandLabel, array $args){
                 if(!$this->testPermission($sender)){
                         return false;
-                /**}
-
-                if(!$sender instanceof Player){
-                        $sender->sendMessage("Please run this command in-game.");
-                        return false;
-                }
 
                 /** @var Player $sender */
 
